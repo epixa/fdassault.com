@@ -1,0 +1,358 @@
+<?xml version="1.0" encoding="utf-8"?><!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en-ca">
+<head>
+   <title>Best way to set cpu affinity automatically in Windows XP? - Forbidden Donut</title>
+<link rel="stylesheet" type="text/css" href="/applications/dashboard/design/style.css?v=2.0.17.8" media="screen" />
+<link rel="shortcut icon" href="/themes/default/design/favicon.png" type="image/x-icon" />
+<script src="/js/library/jquery.js?v=2.0.17.8" type="text/javascript"></script>
+<script src="/js/library/jquery.livequery.js?v=2.0.17.8" type="text/javascript"></script>
+<script src="/js/library/jquery.form.js?v=2.0.17.8" type="text/javascript"></script>
+<script src="/js/library/jquery.popup.js?v=2.0.17.8" type="text/javascript"></script>
+<script src="/js/library/jquery.gardenhandleajaxform.js?v=2.0.17.8" type="text/javascript"></script>
+<script src="/js/global.js?v=2.0.17.8" type="text/javascript"></script>
+<script src="/js/library/jquery.ui.packed.js?v=2.0.17.8" type="text/javascript"></script>
+<script src="/js/library/jquery.autogrow.js?v=2.0.17.8" type="text/javascript"></script>
+<script src="/applications/vanilla/js/options.js?v=2.0.17.8" type="text/javascript"></script>
+<script src="/applications/vanilla/js/bookmark.js?v=2.0.17.8" type="text/javascript"></script>
+<script src="/applications/vanilla/js/discussion.js?v=2.0.17.8" type="text/javascript"></script>
+<script src="/applications/vanilla/js/autosave.js?v=2.0.17.8" type="text/javascript"></script></head>
+<body id="vanilla_discussion_index" class="Vanilla Discussion Index ">
+   <div id="Frame">
+      <div id="Head">
+         <div class="Menu">
+            <h1><a class="Title" href="/"><span>Forbidden Donut</span></a></h1>
+            <ul id="Menu"><li class=" Highlight"><a href="/discussions">Discussions</a></li>
+<li><a href="/activity">Activity</a></li>
+<li class="NonTab"><a class="SignInPopup" href="/entry/signin?Target=discussions">Sign In</a></li>
+</ul>            <div class="Search"><form method="get" action="/search">
+<div>
+<input type="text" id="Form_Search" name="Search" value="" class="InputBox" /><input type="submit" id="Form_Go" value="Go" class="Button" />
+</div>
+</form></div>
+         </div>
+      </div>
+      <div id="Body">
+         <div id="Content"><div class="Tabs HeadingTabs DiscussionTabs">
+   <ul>
+      <li><a href="/discussions">All Discussions</a></li>
+   </ul>
+   <div class="SubTab">Best way to set cpu affinity automatically in Windows XP?</div>
+</div>
+<ul class="MessageList Discussion">
+   <li class="Item Comment FirstComment" id="Discussion_2061">
+   <div class="Comment">
+      <div class="Meta">
+                  <span class="Author">
+            <a title="woer" href="/profile/9/woer"><img src="/uploads/userpics/nBK63WTBLGBON.jpg" alt="woer" /></a><a href="/profile/9/woer">woer</a>         </span>
+         <span class="DateCreated">
+            April 2012         </span>
+         <span class="Permalink">
+            <a href="/discussion/2061/best-way-to-set-cpu-affinity-automatically-in-windows-xps/p1" class="Permalink" name="Item_1" rel="nofollow">Permalink</a>         </span>
+                  <div class="CommentInfo">
+                     </div>
+               </div>
+      <div class="Message">
+						title says it all<br /><br />I need hl.exe to run on one core, else i get horrible frame loss.  Setting it in task manager isn't persistent (if I quit and start again, it goes back to all cores).  THG task assignment manager is all I could find googling, and it doesn't always work		</div>
+         </div>
+</li>
+<li class="Item Comment" id="Comment_23875">
+   <div class="Comment">
+      <div class="Meta">
+                  <span class="Author">
+            <a title="LethaL" href="/profile/73/LethaL"><img src="https://secure.gravatar.com/avatar.php?gravatar_id=7867eb44ae57932ad5a3804f2019b128&amp;default=http%3A%2F%2Ffdassault.com%2Fplugins%2FGravatar%2Fdefault.gif&amp;size=40" alt="LethaL" /></a><a href="/profile/73/LethaL">LethaL</a>         </span>
+         <span class="DateCreated">
+            April 2012         </span>
+         <span class="Permalink">
+            <a href="/discussion/comment/23875#Comment_23875" class="Permalink" name="Item_2" rel="nofollow">Permalink</a>         </span>
+                  <div class="CommentInfo">
+                     </div>
+               </div>
+      <div class="Message">
+						I could not verify any of this but if you want to take a look its from tomshardware<br /><a href="http://www.tomshardware.com/forum/229129-28-affinity-prior-launch" target="_blank" rel="nofollow">http://www.tomshardware.com/forum/229129-28-affinity-prior-launch</a><br /><br /><a href="http://www.tomshardware.com/reviews/bang-dual-processing-buck,815.html" target="_blank" rel="nofollow">http://www.tomshardware.com/reviews/bang-dual-processing-buck,815.html</a><br /><br />or<br /><br />Eldin   10-25-2009 at 10:49:19 AM<br />- 0 +<br /><br />I know this is an old thread, but here's the easy answer that didn't come up. WinXP (and also Vista, I believe) has a utility included called start. This utility can be used to run a program with a specified cpu affinity. the command would look like this:<br /><br />start /affinity xx myprogram.exe<br /><br />Use the actual name of the program you want to run, of course, and substitute xx for a hex number representing the affinity you want as follows:<br /><br />01 - 1st CPU<br />02 - 2nd CPU<br />03 - 1st and 2nd CPU<br />04 - 3rd CPU<br />05 - 1st and 3rd CPU<br />...<br />etc<br />		</div>
+         </div>
+</li>
+<li class="Item Comment" id="Comment_23876">
+   <div class="Comment">
+      <div class="Meta">
+                  <span class="Author">
+            <a title="woer" href="/profile/9/woer"><img src="/uploads/userpics/nBK63WTBLGBON.jpg" alt="woer" /></a><a href="/profile/9/woer">woer</a>         </span>
+         <span class="DateCreated">
+            April 2012         </span>
+         <span class="Permalink">
+            <a href="/discussion/comment/23876#Comment_23876" class="Permalink" name="Item_3" rel="nofollow">Permalink</a>         </span>
+                  <div class="CommentInfo">
+                     </div>
+               </div>
+      <div class="Message">
+						no /affinity parameter for the start command in XP, and also I'm hoping to find a way (program,w hatever) to set affinities just as they launch rather than manually.  Thaks though sir, and nice to see you again!<br /><br />I went back to Processor Lasso, which works alright.  I thought it had been causing my computer to freeze, but it happened a couple times without it running.  I think it's massive disk IO in my new raid device causing it to freeze (happens with utorrent running @ full network speed and sometimes when transferring files)--not sure why yet.  		</div>
+         </div>
+</li>
+<li class="Item Comment" id="Comment_23877">
+   <div class="Comment">
+      <div class="Meta">
+                  <span class="Author">
+            <a title="LethaL" href="/profile/73/LethaL"><img src="https://secure.gravatar.com/avatar.php?gravatar_id=7867eb44ae57932ad5a3804f2019b128&amp;default=http%3A%2F%2Ffdassault.com%2Fplugins%2FGravatar%2Fdefault.gif&amp;size=40" alt="LethaL" /></a><a href="/profile/73/LethaL">LethaL</a>         </span>
+         <span class="DateCreated">
+            April 2012         </span>
+         <span class="Permalink">
+            <a href="/discussion/comment/23877#Comment_23877" class="Permalink" name="Item_4" rel="nofollow">Permalink</a>         </span>
+                  <div class="CommentInfo">
+                     </div>
+               </div>
+      <div class="Message">
+						yup i'm still alive and doing good!<br /><br />i'll do more research when i can and let you know if i find anything, i'll probably post it here one the forum because i don't seem to see you online on steam friends very often<br /><br />and i do miss cs1.6, the server we had, the comunnity we had it was tons of fun, talking about it bring back so much memories		</div>
+         </div>
+</li>
+<li class="Item Comment" id="Comment_23890">
+   <div class="Comment">
+      <div class="Meta">
+                  <span class="Author">
+            <a title="Nunes" href="/profile/112/Nunes"><img src="https://secure.gravatar.com/avatar.php?gravatar_id=86fe76f6c6adcbfeeb1ae47251e754e1&amp;default=http%3A%2F%2Ffdassault.com%2Fplugins%2FGravatar%2Fdefault.gif&amp;size=40" alt="Nunes" /></a><a href="/profile/112/Nunes">Nunes</a>         </span>
+         <span class="DateCreated">
+            April 2012         </span>
+         <span class="Permalink">
+            <a href="/discussion/comment/23890#Comment_23890" class="Permalink" name="Item_5" rel="nofollow">Permalink</a>         </span>
+                  <div class="CommentInfo">
+                     </div>
+               </div>
+      <div class="Message">
+						This was an interesting read:<br /><a href="http://www.techenclave.com/topic/392508-cpu-affinity-made-easy/" target="_blank" rel="nofollow">http://www.techenclave.com/topic/392508-cpu-affinity-made-easy/</a><br /><br />What I'm getting from it, despite them not really talking about this particularly, is that some processors/drivers/versions of xp may have affinity as an option on multicores, but others seem to be missing it.<br /><br />Meanwhile, here was my batch file attempt.  I was SUPER dirty, and literally copy the cmd.exe into the folder of my target program before calling the target .exe with the /C options.<br /><br />echo off<br />copy c:\windows\system32\cmd.exe C:\Program Files\TextPad 5\<br />&quot;C:\Program Files\TextPad 5\cmd.exe&quot; /C start /affinity 1 TextPad.exe<br />pause<br /><br />looking at the results, /affinity isn't a valid switch.<br /><br />$0.02		</div>
+         </div>
+</li>
+<li class="Item Comment" id="Comment_23891">
+   <div class="Comment">
+      <div class="Meta">
+                  <span class="Author">
+            <a title="Nunes" href="/profile/112/Nunes"><img src="https://secure.gravatar.com/avatar.php?gravatar_id=86fe76f6c6adcbfeeb1ae47251e754e1&amp;default=http%3A%2F%2Ffdassault.com%2Fplugins%2FGravatar%2Fdefault.gif&amp;size=40" alt="Nunes" /></a><a href="/profile/112/Nunes">Nunes</a>         </span>
+         <span class="DateCreated">
+            April 2012         </span>
+         <span class="Permalink">
+            <a href="/discussion/comment/23891#Comment_23891" class="Permalink" name="Item_6" rel="nofollow">Permalink</a>         </span>
+                  <div class="CommentInfo">
+                     </div>
+               </div>
+      <div class="Message">
+						Also, sup Lethal?		</div>
+         </div>
+</li>
+<li class="Item Comment" id="Comment_23892">
+   <div class="Comment">
+      <div class="Meta">
+                  <span class="Author">
+            <a title="woer" href="/profile/9/woer"><img src="/uploads/userpics/nBK63WTBLGBON.jpg" alt="woer" /></a><a href="/profile/9/woer">woer</a>         </span>
+         <span class="DateCreated">
+            April 2012         </span>
+         <span class="Permalink">
+            <a href="/discussion/comment/23892#Comment_23892" class="Permalink" name="Item_7" rel="nofollow">Permalink</a>         </span>
+                  <div class="CommentInfo">
+                     </div>
+               </div>
+      <div class="Message">
+						goddamn the more I mess with affinity settings in Process Lasso, the more pissed off I am towards Windows.  I was streaming CS (hltv.org has pro players streaming pugs now), and it was taking up ~20% of my cpu, which for just flash streaming is ridiculous (I'm on a Phenom x4 965 be).  I tried switching Chrome to one core from all cores, and it dropped to around 8%.  Let me repeat that:  20% across four cores vs. 8% on a single one.  <br /><br />In CS using all cores means constant fps drops to 50 or lower, down and up and down and up and down and up, etc., etc., even with all settings at minimum.  With everything on max and restricting it to one core I'm at a constant 99fps.  <br /><br />Everything I've tried so far has worked as well or better when restricted to a single core.  <br /><br />I'm curious if Windows 7 is any better, but I had installed it, and I can't run the mouse acceleration fix (dll injection into hl.exe to get direct mouse input passed into CS) along with EAX sound.		</div>
+         </div>
+</li>
+<li class="Item Comment" id="Comment_23893">
+   <div class="Comment">
+      <div class="Meta">
+                  <span class="Author">
+            <a title="Nunes" href="/profile/112/Nunes"><img src="https://secure.gravatar.com/avatar.php?gravatar_id=86fe76f6c6adcbfeeb1ae47251e754e1&amp;default=http%3A%2F%2Ffdassault.com%2Fplugins%2FGravatar%2Fdefault.gif&amp;size=40" alt="Nunes" /></a><a href="/profile/112/Nunes">Nunes</a>         </span>
+         <span class="DateCreated">
+            April 2012         </span>
+         <span class="Permalink">
+            <a href="/discussion/comment/23893#Comment_23893" class="Permalink" name="Item_8" rel="nofollow">Permalink</a>         </span>
+                  <div class="CommentInfo">
+                     </div>
+               </div>
+      <div class="Message">
+						Oddly enough, I was poking around last night in my task manager and happened to see the manual option for Affinity.  Which pops a list of my cores.  And checkboxes.  My proc/driver/OS/MoBo combo is capable, but it doesn't seem to be a valid cmd switch.<br /><br />I'm actually very interested in what the hell might make it show in some people's systems and not in others.<br /><br />/Also, that's ridiculous, dude... sheeeit.		</div>
+         </div>
+</li>
+<li class="Item Comment" id="Comment_23894">
+   <div class="Comment">
+      <div class="Meta">
+                  <span class="Author">
+            <a title="woer" href="/profile/9/woer"><img src="/uploads/userpics/nBK63WTBLGBON.jpg" alt="woer" /></a><a href="/profile/9/woer">woer</a>         </span>
+         <span class="DateCreated">
+            April 2012         </span>
+         <span class="Permalink">
+            <a href="/discussion/comment/23894#Comment_23894" class="Permalink" name="Item_9" rel="nofollow">Permalink</a>         </span>
+                  <div class="CommentInfo">
+                     </div>
+               </div>
+      <div class="Message">
+						Mine has the option to set it manually from Task Manager.  I was hoping for a way to have Windows memorize those choices so I wouldn't have to do it every time.  It's fine for something I keep open all the time, but cs for example I do not.  Process LAsso has been working out alright.  It has some additional features that I'd rather not use (like changing priority when it somewhat arbitrarily decides a process is using too much cpu), but it memorizes affinity choices at least.  		</div>
+         </div>
+</li>
+<li class="Item Comment" id="Comment_23898">
+   <div class="Comment">
+      <div class="Meta">
+                  <span class="Author">
+            <a title="Nunes" href="/profile/112/Nunes"><img src="https://secure.gravatar.com/avatar.php?gravatar_id=86fe76f6c6adcbfeeb1ae47251e754e1&amp;default=http%3A%2F%2Ffdassault.com%2Fplugins%2FGravatar%2Fdefault.gif&amp;size=40" alt="Nunes" /></a><a href="/profile/112/Nunes">Nunes</a>         </span>
+         <span class="DateCreated">
+            April 2012         </span>
+         <span class="Permalink">
+            <a href="/discussion/comment/23898#Comment_23898" class="Permalink" name="Item_10" rel="nofollow">Permalink</a>         </span>
+                  <div class="CommentInfo">
+                     </div>
+               </div>
+      <div class="Message">
+						Yeah, that was more or less my experience as well.  But that means there's a switch somewhere.  Registry doesn't feel right.  MsConfig doesn't feel right.  CMD isn't right, apparently.  What's Process LAsso written in?  I have a code explorer that works pretty well at dissecting things in VB.Net and C#, so I could at least see what APIs it's calling to set affinity.<br /><br />It's a fucking computer.  If you can set something manually, you damn well better be able to set it automatically.  I don't like mysteries inside my devil-box.		</div>
+         </div>
+</li>
+<li class="Item Comment" id="Comment_23900">
+   <div class="Comment">
+      <div class="Meta">
+                  <span class="Author">
+            <a title="woer" href="/profile/9/woer"><img src="/uploads/userpics/nBK63WTBLGBON.jpg" alt="woer" /></a><a href="/profile/9/woer">woer</a>         </span>
+         <span class="DateCreated">
+            April 2012         </span>
+         <span class="Permalink">
+            <a href="/discussion/comment/23900#Comment_23900" class="Permalink" name="Item_11" rel="nofollow">Permalink</a>         </span>
+                  <div class="CommentInfo">
+                     </div>
+               </div>
+      <div class="Message">
+						It's in c++ <a href="http://bitsum.com/prolasso_why_native.php" target="_blank" rel="nofollow">http://bitsum.com/prolasso_why_native.php</a>  <br /><br />&quot; We [...] used the lowest level API available for process management - the largely undocumented NT Native APIs. &quot;<br /><br />gotta love undocumented api's		</div>
+         </div>
+</li>
+<li class="Item Comment" id="Comment_23901">
+   <div class="Comment">
+      <div class="Meta">
+                  <span class="Author">
+            <a title="Nunes" href="/profile/112/Nunes"><img src="https://secure.gravatar.com/avatar.php?gravatar_id=86fe76f6c6adcbfeeb1ae47251e754e1&amp;default=http%3A%2F%2Ffdassault.com%2Fplugins%2FGravatar%2Fdefault.gif&amp;size=40" alt="Nunes" /></a><a href="/profile/112/Nunes">Nunes</a>         </span>
+         <span class="DateCreated">
+            April 2012         </span>
+         <span class="Permalink">
+            <a href="/discussion/comment/23901#Comment_23901" class="Permalink" name="Item_12" rel="nofollow">Permalink</a>         </span>
+                  <div class="CommentInfo">
+                     </div>
+               </div>
+      <div class="Message">
+						HA!  Good work.  Probably the NTDLL.dll library then.  Just based on it's being the biggest meanest Native API in NT.		</div>
+         </div>
+</li>
+<li class="Item Comment" id="Comment_23903">
+   <div class="Comment">
+      <div class="Meta">
+                  <span class="Author">
+            <a title="LethaL" href="/profile/73/LethaL"><img src="https://secure.gravatar.com/avatar.php?gravatar_id=7867eb44ae57932ad5a3804f2019b128&amp;default=http%3A%2F%2Ffdassault.com%2Fplugins%2FGravatar%2Fdefault.gif&amp;size=40" alt="LethaL" /></a><a href="/profile/73/LethaL">LethaL</a>         </span>
+         <span class="DateCreated">
+            April 2012         </span>
+         <span class="Permalink">
+            <a href="/discussion/comment/23903#Comment_23903" class="Permalink" name="Item_13" rel="nofollow">Permalink</a>         </span>
+                  <div class="CommentInfo">
+                     </div>
+               </div>
+      <div class="Message">
+						Woer i am not sure if it could help but if i remember correctly cs had launch options you could set on steam to fix mouse accelleration with those commands -noforcemspd -noforcemaccel -noforcemparms<br /><br />there is also other commands for which directx you want to use, set how much memory you want cs to use, disable certain options to gain fps and such it might not fix your problems but it might help who knows<br /><br />This link has a lot of launch options<br /><a href="http://www.mobility-gaming.com/index.php?site=articles&amp;action=show&amp;articlesID=27" target="_blank" rel="nofollow">http://www.mobility-gaming.com/index.php?site=articles&amp;action=show&amp;articlesID=27</a><br />I remember using those commands while playing cs as launch options : -noforcemspd -noforcemaccel -noforcemparms -heapsize -noip -noipx -nojoy -dxlevel<br /><br /><br /><a href="/profile/Nunes">@Nunes</a> Like i meontioned in a previous post i'm doing well and fine, how about you		</div>
+         </div>
+</li>
+<li class="Item Comment" id="Comment_23904">
+   <div class="Comment">
+      <div class="Meta">
+                  <span class="Author">
+            <a title="Nunes" href="/profile/112/Nunes"><img src="https://secure.gravatar.com/avatar.php?gravatar_id=86fe76f6c6adcbfeeb1ae47251e754e1&amp;default=http%3A%2F%2Ffdassault.com%2Fplugins%2FGravatar%2Fdefault.gif&amp;size=40" alt="Nunes" /></a><a href="/profile/112/Nunes">Nunes</a>         </span>
+         <span class="DateCreated">
+            April 2012         </span>
+         <span class="Permalink">
+            <a href="/discussion/comment/23904#Comment_23904" class="Permalink" name="Item_14" rel="nofollow">Permalink</a>         </span>
+                  <div class="CommentInfo">
+                     </div>
+               </div>
+      <div class="Message">
+						Every day's a party.  At least that's the best explanation I have for the number of clowns I deal with every day.		</div>
+         </div>
+</li>
+<li class="Item Comment" id="Comment_23905">
+   <div class="Comment">
+      <div class="Meta">
+                  <span class="Author">
+            <a title="b1lly" href="/profile/156/b1lly"><img src="/uploads/userpics/nIS6LDZP6G3KN.jpg" alt="b1lly" /></a><a href="/profile/156/b1lly">b1lly</a>         </span>
+         <span class="DateCreated">
+            April 2012         </span>
+         <span class="Permalink">
+            <a href="/discussion/comment/23905#Comment_23905" class="Permalink" name="Item_15" rel="nofollow">Permalink</a>         </span>
+                  <div class="CommentInfo">
+                     </div>
+               </div>
+      <div class="Message">
+						You can make it so when you right click the .exe, you can click &quot;run on CPU1&quot;.<br /><br /><a href="http://www.sevenforums.com/tutorials/83864-processor-affinity-add-set-affinity-context-menu.html" target="_blank" rel="nofollow">http://www.sevenforums.com/tutorials/83864-processor-affinity-add-set-affinity-context-menu.html</a>		</div>
+         </div>
+</li>
+<li class="Item Comment" id="Comment_23906">
+   <div class="Comment">
+      <div class="Meta">
+                  <span class="Author">
+            <a title="b1lly" href="/profile/156/b1lly"><img src="/uploads/userpics/nIS6LDZP6G3KN.jpg" alt="b1lly" /></a><a href="/profile/156/b1lly">b1lly</a>         </span>
+         <span class="DateCreated">
+            April 2012         </span>
+         <span class="Permalink">
+            <a href="/discussion/comment/23906#Comment_23906" class="Permalink" name="Item_16" rel="nofollow">Permalink</a>         </span>
+                  <div class="CommentInfo">
+                     </div>
+               </div>
+      <div class="Message">
+						And here's an open source program that seems to be able to do it also. <a href="http://www.adsciengineering.com/StartAffinity/" target="_blank" rel="nofollow">http://www.adsciengineering.com/StartAffinity/</a><br />		</div>
+         </div>
+</li>
+<li class="Item Comment" id="Comment_24102">
+   <div class="Comment">
+      <div class="Meta">
+                  <span class="Author">
+            <a title="dan" href="/profile/13/dan"><img src="https://secure.gravatar.com/avatar.php?gravatar_id=43f7b6f1b38b84bf6cab5d30bb35a5d9&amp;default=http%3A%2F%2Ffdassault.com%2Fplugins%2FGravatar%2Fdefault.gif&amp;size=40" alt="dan" /></a><a href="/profile/13/dan">dan</a>         </span>
+         <span class="DateCreated">
+            January 2013         </span>
+         <span class="Permalink">
+            <a href="/discussion/comment/24102#Comment_24102" class="Permalink" name="Item_17" rel="nofollow">Permalink</a>         </span>
+                  <div class="CommentInfo">
+                     </div>
+               </div>
+      <div class="Message">
+						Yeah, that's probably a trap.<br /><br />-dan		</div>
+         </div>
+</li>
+</ul>
+   <div class="Foot Closed">
+      <div class="Note Closed">This discussion has been closed.</div>
+      <a href="/discussions" class="TabLink">&larr; All Discussions</a>   </div>
+   </div>
+         <div id="Panel"><div class="Box GuestBox">
+   <h4>Howdy, Stranger!</h4>
+   <p>It looks like you're new here. If you want to get involved, click one of these buttons!</p>
+      <p>
+      <a href="/entry/signin?Target=discussion%2F2061%2Fbest-way-to-set-cpu-affinity-automatically-in-windows-xps%2Fp1" class="Button SignInPopup">Sign In</a> <a href="/entry/register?Target=discussion%2F2061%2Fbest-way-to-set-cpu-affinity-automatically-in-windows-xps%2Fp1" class="Button ApplyButton">Apply for Membership</a>   </p>
+   </div><div class="Box BoxCategories">
+   <h4><a href="/categories/all">Categories</a></h4>
+   <ul class="PanelInfo PanelCategories">
+      <li><span><strong><a href="/discussions">All Discussions</a></strong><span class="Count">1,909</span></span></li>
+<li class="Depth1"><strong><a href="/categories/general-discussion">General Discussion</a></strong><span class="Count">1,045</span></li>
+<li class="Depth1 Active"><strong><a href="/categories/hexens-hax">Hexen&#039;s Hax</a></strong><span class="Count">103</span></li>
+<li class="Depth1"><strong><a href="/categories/forum-de-awesome">Forum de Awesome</a></strong><span class="Count">325</span></li>
+<li class="Depth1"><strong><a href="/categories/political-discussion">Political Discussion</a></strong><span class="Count">296</span></li>
+<li class="Depth1"><strong><a href="/categories/counter-strike">Counter-Strike</a></strong><span class="Count">79</span></li>
+<li class="Depth1"><strong><a href="/categories/starcraft-ii">Starcraft II</a></strong><span class="Count">31</span></li>
+<li class="Depth1"><strong><a href="/categories/world-of-warcraft">World of Warcraft</a></strong><span class="Count">30</span></li>
+   </ul>
+</div>
+   </div>
+      </div>
+      <div id="Foot">
+			<!-- Various definitions for Javascript //-->
+<div id="Definitions" style="display: none;">
+<input type="hidden" id="ImageResized" value="This image has been resized to fit in the page. Click to enlarge." />
+<input type="hidden" id="DiscussionID" value="2061" />
+<input type="hidden" id="LastCommentID" value="24102" />
+<input type="hidden" id="Vanilla_Comments_AutoRefresh" value="0" />
+<input type="hidden" id="TransportError" value="A fatal error occurred while processing the request.&lt;br /&gt;The server returned the following response: %s" />
+<input type="hidden" id="TransientKey" value="35GD6XOZGBV5" />
+<input type="hidden" id="WebRoot" value="http://fdassault.com/" />
+<input type="hidden" id="UrlFormat" value="/{Path}" />
+<input type="hidden" id="ConfirmHeading" value="Confirm" />
+<input type="hidden" id="ConfirmText" value="Are you sure you want to do that?" />
+<input type="hidden" id="Okay" value="Okay" />
+<input type="hidden" id="Cancel" value="Cancel" />
+<input type="hidden" id="Search" value="Search" />
+</div><div><a href="http://vanillaforums.org">Powered by Vanilla</a></div>		</div>
+   </div>
+	</body>
+</html>
